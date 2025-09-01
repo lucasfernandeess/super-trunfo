@@ -28,7 +28,7 @@ int main() {
     scanf("%d", &numero_de_pontos_turisticos);
     printf("\n");
 
-    printf("Carta 1:\n");
+    printf("=== Carta 1 ====\n");
     printf("Estado: %s\n", estado);
     printf("Código: %s\n", codigo_da_carta);
     printf("Cidade: %s\n", nome_da_cidade);
@@ -36,6 +36,8 @@ int main() {
     printf("Área em km²: %f\n", area_em_km2);
     printf("PIB: R$ %f milhões\n", pib);
     printf("Pontos turísticos: %d\n", numero_de_pontos_turisticos);
+    printf("Densidade Populacional: %f hab/km²\n", populacao / area_em_km2);
+    printf("PIB per Capita: %f reais\n", pib / populacao);
     printf("\n");
 // carta 2
     printf("Carta 2\n");
@@ -56,7 +58,7 @@ int main() {
     
     printf("\n");
 //carta 2
-    printf("Carta 2:\n");
+    printf("=== Carta 2 ====\n");
     printf("Estado: %s\n", estado);
     printf("Código: %s\n", codigo_da_carta);
     printf("Cidade: %s\n", nome_da_cidade);
@@ -64,5 +66,7 @@ int main() {
     printf("Área em km²: %f\n", area_em_km2);
     printf("PIB: R$ %f milhões\n", pib);
     printf("Pontos turísticos: %d\n", numero_de_pontos_turisticos);
+    printf("Densidade Populacional: %f hab/km²\n", populacao / area_em_km2);
+    printf("PIB per Capita: %f reais\n", pib / populacao);
     return 0;
     }
