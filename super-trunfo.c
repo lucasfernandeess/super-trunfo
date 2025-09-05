@@ -11,6 +11,7 @@ int main() {
     float pib;
     int numero_de_pontos_turisticos;
     float super_poder = populacao + area_em_km2 + numero_de_pontos_turisticos + (pib / populacao) + !(populacao / area_em_km2);
+    int opcao;
 
     // Declaração das variáveis carta 2
     int carta2;
@@ -26,7 +27,7 @@ int main() {
 // carta 1
     printf("Carta 1\n");
     printf("Estado:");
-    scanf("%s", &estado);
+    scanf("%c", &estado);
     printf("Código da carta:");
     scanf("%s", &codigo_da_carta);
     printf("Cidade:");
@@ -106,7 +107,34 @@ printf("Carta 2 - %s, %s, %lu\n", nome_da_cidade2, estado2, populacao2);
         printf("=== Carta 2 VENCEU ===");
     }
     else {
-        ("=== EMPARE ===");
+        ("=== EMPATE ===");
     }
+    printf("\n");
+
+    printf("=== Comparação de Atributos ===\n");
+    printf("1. Nome do estado:\n", estado, estado2);
+    printf("2. População\n");
+    printf("3. Área\n");
+    printf("4. PIBn\n");
+    printf("5. Número de pontos turísticos\n");
+    printf("6. Densidade demográfica\n");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+    case 1:
+      printf("Escolha Um Atributo\n");
+      break;
+    case 2:
+      printf("\n", estado, estado2);
+      printf("Atributo população\n");
+      printf("Os valores do atributo para cada carta.\n", populacao, populacao2);
+        printf("Qual carta venceu\n");
+      break;
+    case 3:
+      printf("Saque realizado com sucesso\n");
+      break;
+    default:
+      printf("Opção inválida\n");
+  }
     return 0;
     }
